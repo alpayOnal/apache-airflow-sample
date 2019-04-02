@@ -4,5 +4,6 @@
 __pycache__
 *.pyc
 .log
-logs/
+airflow/logs/
+airflow/usr/
 .idea/vcs.xml
