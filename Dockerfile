@@ -8,6 +8,8 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 RUN mkdir  /root/.aws/
 COPY aws_credential  /root/.aws/credentials
+COPY aws_config  /root/.aws/config
+
 COPY requirements.txt /tmp/
 
 ENV AIRFLOW_HOME=/test_airflow/airflow
