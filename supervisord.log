@@ -1,0 +1,157 @@
+2019-04-02 15:29:45,472 CRIT Supervisor running as root (no user in config file)
+2019-04-02 15:29:45,476 INFO supervisord started with pid 15
+2019-04-02 15:29:46,481 INFO spawned: 'scheduler' with pid 18
+2019-04-02 15:29:46,485 INFO spawned: 'server' with pid 19
+2019-04-02 15:29:47,481 INFO success: scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:29:47,482 INFO exited: scheduler (exit status 1; not expected)
+2019-04-02 15:29:47,499 INFO spawned: 'scheduler' with pid 28
+2019-04-02 15:29:47,500 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:29:47,676 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:29:48,138 INFO spawned: 'server' with pid 30
+2019-04-02 15:29:48,493 INFO exited: scheduler (exit status 1; not expected)
+2019-04-02 15:29:49,158 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:29:49,292 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:29:50,299 INFO spawned: 'scheduler' with pid 38
+2019-04-02 15:29:50,303 INFO spawned: 'server' with pid 39
+2019-04-02 15:29:51,237 INFO exited: scheduler (exit status 1; not expected)
+2019-04-02 15:29:51,418 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:29:51,419 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:29:51,421 INFO spawned: 'server' with pid 48
+2019-04-02 15:29:52,422 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:29:52,562 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:29:53,568 INFO spawned: 'scheduler' with pid 53
+2019-04-02 15:29:53,572 INFO spawned: 'server' with pid 54
+2019-04-02 15:29:54,534 INFO exited: scheduler (exit status 1; not expected)
+2019-04-02 15:29:54,605 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:29:54,737 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:29:55,744 INFO spawned: 'server' with pid 63
+2019-04-02 15:29:56,751 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:29:56,891 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:29:57,897 INFO spawned: 'scheduler' with pid 68
+2019-04-02 15:29:57,901 INFO spawned: 'server' with pid 69
+2019-04-02 15:29:58,872 INFO exited: scheduler (exit status 1; not expected)
+2019-04-02 15:29:58,882 INFO gave up: scheduler entered FATAL state, too many start retries too quickly
+2019-04-02 15:29:58,929 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:29:59,064 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:30:00,069 INFO spawned: 'server' with pid 78
+2019-04-02 15:30:01,188 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:30:01,189 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:30:02,195 INFO spawned: 'server' with pid 83
+2019-04-02 15:30:03,307 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:30:03,308 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:30:04,315 INFO spawned: 'server' with pid 88
+2019-04-02 15:30:05,327 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:30:05,465 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:30:06,469 INFO spawned: 'server' with pid 93
+2019-04-02 15:30:07,482 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:30:07,622 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:30:08,629 INFO spawned: 'server' with pid 98
+2019-04-02 15:30:09,639 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:30:09,778 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:30:10,788 INFO spawned: 'server' with pid 103
+2019-04-02 15:30:11,903 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:30:11,904 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:30:11,906 INFO spawned: 'server' with pid 108
+2019-04-02 15:30:12,905 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:30:13,043 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:30:14,048 INFO spawned: 'server' with pid 113
+2019-04-02 15:30:15,054 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:30:15,196 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:30:16,201 INFO spawned: 'server' with pid 118
+2019-04-02 15:30:17,222 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:30:17,361 INFO exited: server (exit status 1; not expected)
+2019-04-02 15:30:18,189 INFO spawned: 'server' with pid 123
+2019-04-02 15:30:18,192 WARN received SIGINT indicating exit request
+2019-04-02 15:30:18,193 INFO waiting for server to die
+2019-04-02 15:30:18,194 INFO stopped: server (terminated by SIGTERM)
+2019-04-02 15:30:29,287 CRIT Supervisor running as root (no user in config file)
+2019-04-02 15:30:29,291 INFO supervisord started with pid 129
+2019-04-02 15:30:30,295 INFO spawned: 'scheduler' with pid 132
+2019-04-02 15:30:30,301 INFO spawned: 'server' with pid 133
+2019-04-02 15:30:31,307 INFO success: scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:30:31,308 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:41:42,635 WARN received SIGINT indicating exit request
+2019-04-02 15:41:42,637 INFO waiting for scheduler, server to die
+2019-04-02 15:41:43,159 INFO stopped: server (exit status 0)
+2019-04-02 15:41:43,316 INFO stopped: scheduler (exit status 0)
+2019-04-02 15:41:44,308 CRIT Supervisor running as root (no user in config file)
+2019-04-02 15:41:44,314 INFO supervisord started with pid 920
+2019-04-02 15:41:45,320 INFO spawned: 'scheduler' with pid 923
+2019-04-02 15:41:45,324 INFO spawned: 'server' with pid 924
+2019-04-02 15:41:46,330 INFO success: scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:41:46,330 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:41:52,323 WARN received SIGINT indicating exit request
+2019-04-02 15:41:52,324 INFO waiting for scheduler, server to die
+2019-04-02 15:41:52,855 INFO stopped: server (exit status 0)
+2019-04-02 15:41:53,012 INFO stopped: scheduler (exit status 0)
+2019-04-02 15:41:59,043 CRIT Supervisor running as root (no user in config file)
+2019-04-02 15:41:59,048 INFO supervisord started with pid 968
+2019-04-02 15:42:00,052 INFO spawned: 'scheduler' with pid 971
+2019-04-02 15:42:00,055 INFO spawned: 'server' with pid 972
+2019-04-02 15:42:01,132 INFO success: scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:42:01,132 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:42:20,875 WARN received SIGINT indicating exit request
+2019-04-02 15:42:20,876 INFO waiting for scheduler, server to die
+2019-04-02 15:42:21,097 WARN received SIGINT indicating exit request
+2019-04-02 15:42:21,323 INFO stopped: server (exit status 0)
+2019-04-02 15:42:21,465 INFO stopped: scheduler (exit status 0)
+2019-04-02 15:42:27,871 CRIT Supervisor running as root (no user in config file)
+2019-04-02 15:42:27,876 INFO supervisord started with pid 1030
+2019-04-02 15:42:28,883 INFO spawned: 'scheduler' with pid 1033
+2019-04-02 15:42:28,888 INFO spawned: 'server' with pid 1034
+2019-04-02 15:42:29,993 INFO success: scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:42:29,994 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 15:43:34,785 WARN received SIGINT indicating exit request
+2019-04-02 15:43:34,786 INFO waiting for scheduler, server to die
+2019-04-02 15:43:35,314 INFO stopped: server (exit status 0)
+2019-04-02 15:43:35,471 INFO stopped: scheduler (exit status 0)
+2019-04-02 16:04:15,944 CRIT Supervisor running as root (no user in config file)
+2019-04-02 16:04:15,948 INFO supervisord started with pid 1164
+2019-04-02 16:04:16,956 INFO spawned: 'scheduler' with pid 1167
+2019-04-02 16:04:16,960 INFO spawned: 'server' with pid 1168
+2019-04-02 16:04:17,965 INFO success: scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 16:04:17,966 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 16:49:03,218 WARN received SIGINT indicating exit request
+2019-04-02 16:49:03,222 INFO waiting for scheduler, server to die
+2019-04-02 16:49:03,774 INFO stopped: server (exit status 0)
+2019-04-02 16:49:03,940 INFO stopped: scheduler (exit status 0)
+2019-04-02 16:49:09,050 CRIT Supervisor running as root (no user in config file)
+2019-04-02 16:49:09,055 INFO supervisord started with pid 4283
+2019-04-02 16:49:10,060 INFO spawned: 'scheduler' with pid 4286
+2019-04-02 16:49:10,066 INFO spawned: 'server' with pid 4287
+2019-04-02 16:49:11,066 INFO success: scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 16:49:11,067 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 17:06:16,582 WARN received SIGINT indicating exit request
+2019-04-02 17:06:16,585 INFO waiting for scheduler, server to die
+2019-04-02 17:06:16,838 WARN received SIGINT indicating exit request
+2019-04-02 17:06:17,145 INFO stopped: server (exit status 0)
+2019-04-02 17:06:17,307 INFO stopped: scheduler (exit status 0)
+2019-04-02 17:06:27,495 CRIT Supervisor running as root (no user in config file)
+2019-04-02 17:06:27,500 INFO supervisord started with pid 5475
+2019-04-02 17:06:28,507 INFO spawned: 'scheduler' with pid 5478
+2019-04-02 17:06:28,512 INFO spawned: 'server' with pid 5479
+2019-04-02 17:06:29,555 INFO success: scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-02 17:06:29,556 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-03 06:51:34,269 WARN received SIGINT indicating exit request
+2019-04-03 06:51:34,288 INFO waiting for scheduler, server to die
+2019-04-03 06:51:34,419 WARN received SIGINT indicating exit request
+2019-04-03 06:51:34,627 WARN received SIGINT indicating exit request
+2019-04-03 06:51:35,934 WARN received SIGINT indicating exit request
+2019-04-03 06:51:36,143 WARN received SIGINT indicating exit request
+2019-04-03 06:51:37,312 INFO stopped: server (exit status 0)
+2019-04-03 06:51:37,314 INFO waiting for scheduler to die
+2019-04-03 06:51:37,398 WARN received SIGINT indicating exit request
+2019-04-03 06:51:37,598 WARN received SIGINT indicating exit request
+2019-04-03 06:51:37,856 INFO stopped: scheduler (exit status 0)
+2019-04-03 06:51:59,521 CRIT Supervisor running as root (no user in config file)
+2019-04-03 06:51:59,525 INFO supervisord started with pid 20295
+2019-04-03 06:52:00,533 INFO spawned: 'scheduler' with pid 20298
+2019-04-03 06:52:00,537 INFO spawned: 'server' with pid 20299
+2019-04-03 06:52:01,549 INFO success: scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-03 06:52:01,550 INFO success: server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-04-03 07:45:18,613 WARN received SIGINT indicating exit request
+2019-04-03 07:45:18,615 INFO waiting for scheduler, server to die
+2019-04-03 07:45:18,827 WARN received SIGINT indicating exit request
+2019-04-03 07:45:19,060 WARN received SIGINT indicating exit request
+2019-04-03 07:45:19,164 INFO stopped: server (exit status 0)
+2019-04-03 07:45:19,346 INFO stopped: scheduler (exit status 0)

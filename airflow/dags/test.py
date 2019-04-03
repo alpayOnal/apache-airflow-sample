@@ -1,11 +1,18 @@
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
+import  logging
+
+# import boto3
+#
+# from aws_hook import _get_credentials
+# from airflow.contrib.hooks.aws_hook import AwsHook
 
 default_args = {
     'owner': 'test_airflow',
     'depends_on_past': False,
     'start_date': datetime(2019, 4, 1),
+    'email': ['test@test.com'],
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
@@ -14,16 +21,50 @@ default_args = {
 
 dag = DAG('airflow_test_dag',
           max_active_runs=1,
-          schedule_interval='0 * * * *',
+          schedule_interval='0 * * * *',  # '@daily' '@weekly' ...
           # schedule_interval=timedelta(hours=24),
           default_args=default_args,
           description="test airflow")
 
 
-def write_context(ds, **kwargs):
+# s3 = _get_credentials().resource('s3')
+# s3.Bucket(bucket_name).upload_file(filename, key)
+
+
+def start_AWS(ds, **kwargs):
+    logging.info('--------------'+kwargs['name'])
+
     with open("/app/test_airflow.log", "a") as myfile:
         myfile.write(kwargs['name'] + '|' + str(ds) + '|' + str(datetime.now()) + "\n")
 
+
+def upload_file_to_S3(ds, **kwargs):
+    logging.info('--------------'+kwargs['name'])
+    with open("/app/test_airflow.log", "a") as myfile:
+        myfile.write(kwargs['name'] + '|' + str(ds) + '|' + str(datetime.now()) + "\n")
+
+
+def write_context(ds, **kwargs):
+    logging.info('--------------'+kwargs['name'])
+    with open("/app/test_airflow.log", "a") as myfile:
+        myfile.write(kwargs['name'] + '|' + str(ds) + '|' + str(datetime.now()) + "\n")
+
+#
+# start_aws = PythonOperator(
+#     task_id='start_AWS',
+#     provide_context=True,
+#     python_callable=write_context,
+#     op_kwargs={'name': 'start_AWS'},
+#     dag=dag,
+# )
+
+upload_file_to_s3 = PythonOperator(
+    task_id='upload_file_to_S3',
+    provide_context=True,
+    python_callable=write_context,
+    op_kwargs={'name': 'upload_file_to_S3'},
+    dag=dag,
+)
 
 task1 = PythonOperator(
     task_id='task1',
@@ -57,6 +98,7 @@ task4 = PythonOperator(
     dag=dag,
 )
 
+# task1.set_upstream(start_aws)
 task2.set_upstream(task1)
 task3.set_upstream(task1)
 task4.set_upstream(task1)
@@ -93,10 +135,7 @@ task8 = PythonOperator(
     dag=dag,
 )
 
-task5.set_upstream(task4)
-task6.set_upstream(task4)
-task7.set_upstream(task4)
-task8.set_upstream(task4)
+task4.set_downstream([task5, task6, task7])
 
 task9 = PythonOperator(
     task_id='task9',
@@ -138,8 +177,14 @@ task13 = PythonOperator(
     dag=dag,
 )
 
-task9.set_upstream(task6)
-task10.set_upstream(task6)
-task11.set_upstream(task6)
-task12.set_upstream(task6)
-task13.set_upstream(task6)
+task8.set_upstream([task5, task6, task7])
+# task5.set_downstream(task8)
+# task6.set_downstream(task8)
+# task7.set_downstream(task8)
+
+task9.set_upstream(task8)
+task10.set_upstream(task9)
+task11.set_upstream(task10)
+task12.set_upstream(task11)
+task13.set_upstream(task12)
+upload_file_to_s3.set_upstream(task13)
