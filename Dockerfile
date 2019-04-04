@@ -21,4 +21,4 @@ RUN pip install --no-cache-dir -r /tmp/requirements.txt;
 RUN airflow initdb
 EXPOSE 8080
 
-#CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord"]

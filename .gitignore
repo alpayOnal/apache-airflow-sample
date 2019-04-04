@@ -11,3 +11,4 @@ airflow/airflow.db
 test_airflow.log
 airflow/airflow-webserver.pid
 supervisord.log
+supervisord.pid
